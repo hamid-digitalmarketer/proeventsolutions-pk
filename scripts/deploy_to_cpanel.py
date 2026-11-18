@@ -29,7 +29,7 @@ headers = {
 upload_url = f"{cpanel_host}/execute/Fileman/upload_files"
 
 # Folders and files to exclude from web hosting root
-EXCLUDE_DIRS = {'.git', '.github', 'scripts', '__pycache__', '.pytest_cache'}
+EXCLUDE_DIRS = {'.git', '.github', 'scripts', 'docs', '__pycache__', '.pytest_cache'}
 EXCLUDE_FILES = {'.gitignore', 'deploy_to_cpanel.py'}
 
 file_list = []

@@ -985,3 +985,501 @@ p {
     padding: 2.5rem 1.5rem;
   }
 }
+
+/* ==========================================================================
+   IMEVENT MODERNIZED COMPONENTS — Pro Event Solutions
+   Features:
+    - Glowing Hero Badges
+    - Quick Inquiry Ribbon Bar
+    - Statistical Counter Strip
+    - Tabbed Event Delivery Process
+    - Filterable Portfolio Gallery (Isotope-style)
+    - Premier Lahore Venues Showcase
+    - Partner & Corporate Client Ribbon
+    - Interactive WhatsApp Quote Calculator
+   ========================================================================== */
+
+/* Hero Badge Pill */
+.hero-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.15rem;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-full);
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.hero-badge-pill svg {
+  color: var(--gold-primary);
+}
+
+/* Quick Inquiry Ribbon Bar */
+.quick-inquiry-bar {
+  position: relative;
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+  z-index: 30;
+}
+
+.inquiry-bar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.inquiry-item {
+  flex: 1;
+  min-width: 170px;
+}
+
+.inquiry-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.05em;
+}
+
+.inquiry-select, .inquiry-input {
+  width: 100%;
+  background: var(--bg-dark);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-white);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.inquiry-select:focus, .inquiry-input:focus {
+  border-color: var(--gold-primary);
+}
+
+.inquiry-btn-wrap {
+  flex: 0 0 auto;
+  align-self: flex-end;
+}
+
+/* Stats Counter Strip */
+.stats-strip {
+  background: linear-gradient(180deg, rgba(18, 24, 38, 0.9) 0%, rgba(11, 15, 25, 0.9) 100%);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 2.5rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 1rem;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.stat-sub {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 0.2rem;
+}
+
+/* Process Tabs Component */
+.process-tabs-wrap {
+  margin: 2.5rem 0;
+}
+
+.process-tabs-nav {
+  display: flex;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.process-tabs-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-nav-btn {
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tab-nav-btn.active {
+  color: var(--gold-light);
+  border-bottom-color: var(--gold-primary);
+}
+
+.tab-nav-btn .step-badge {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--bg-elevated);
+  font-size: 0.75rem;
+}
+
+.tab-nav-btn.active .step-badge {
+  background: var(--gold-primary);
+  color: #000000;
+}
+
+.tab-pane-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  display: none;
+  animation: fadeIn 0.35s ease;
+}
+
+.tab-pane-card.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Isotope Portfolio Filters */
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.filter-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-pill:hover, .filter-pill.active {
+  background: rgba(212, 175, 55, 0.15);
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
+}
+
+.portfolio-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.portfolio-card-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-gold);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-img-wrap {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.portfolio-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.portfolio-card-item:hover .portfolio-img-wrap img {
+  transform: scale(1.06);
+}
+
+.portfolio-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-card-body {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-card-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-white);
+}
+
+.portfolio-card-loc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+/* Venue Showcase Grid */
+.venues-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.venue-card-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.venue-card-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-gold);
+}
+
+.venue-img-wrap {
+  height: 160px;
+  position: relative;
+}
+
+.venue-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.venue-body {
+  padding: 1.25rem;
+}
+
+.venue-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.35rem;
+}
+
+.venue-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+/* Partner Logos Ribbon */
+.partner-ribbon-wrap {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  background: rgba(18, 24, 38, 0.4);
+}
+
+.partner-ribbon-title {
+  text-align: center;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.partner-logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.partner-pill {
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.partner-pill:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* Interactive Quote Builder */
+.quote-builder-card {
+  background: linear-gradient(145deg, #131B2E 0%, #0B0F19 100%);
+  border: 2px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-field-full {
+  grid-column: span 3;
+}
+
+/* Media Queries for New Components */
+@media (max-width: 1024px) {
+  .venues-showcase-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tab-pane-card.active {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .quote-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quote-field-full {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .quick-inquiry-bar {
+    margin-top: 1rem;
+  }
+  .inquiry-bar-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .inquiry-btn-wrap {
+    width: 100%;
+  }
+  .inquiry-btn-wrap .btn {
+    width: 100%;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .stat-item:nth-child(3), .stat-item:nth-child(4) {
+    border-bottom: none;
+  }
+  .portfolio-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .venues-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-field-full {
+    grid-column: span 1;
+  }
+  .quote-builder-card {
+    padding: 2rem 1.25rem;
+  }
+}
