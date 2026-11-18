@@ -1,4 +1,7 @@
 # Apache .htaccess for Pro Event Solutions (cPanel Shared Hosting)
+AddDefaultCharset UTF-8
+AddType "text/html; charset=UTF-8" .html
+
 RewriteEngine On
 RewriteBase /
 

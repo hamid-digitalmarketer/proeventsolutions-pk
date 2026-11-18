@@ -234,4 +234,54 @@
     });
   }
 
+  // 5. Scroll Reveal with IntersectionObserver (Safe Fallback)
+  if ('IntersectionObserver' in window) {
+    document.documentElement.classList.add('js-reveal-ready');
+    var revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-stagger, .reveal-slide-left, .reveal-slide-right, .reveal-scale');
+    
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          
+          if (entry.target.classList.contains('reveal-stagger')) {
+            var children = entry.target.children;
+            for (var i = 0; i < children.length; i++) {
+              (function (child, delay) {
+                setTimeout(function () {
+                  child.classList.add('is-revealed');
+                }, delay);
+              })(children[i], i * 90);
+            }
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -40px 0px',
+      threshold: 0.12
+    });
+
+    revealElements.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  }
+
+  // 6. Back-to-Top Button Handler
+  var backToTop = document.getElementById('btn-back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
 })();
