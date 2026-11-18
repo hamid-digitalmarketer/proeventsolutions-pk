@@ -1696,3 +1696,322 @@ html.js-reveal-ready .reveal-stagger > *:not(.is-revealed) {
     height: 38px;
   }
 }
+
+/* ==========================================================================
+   MOBILE RESPONSIVE HARDENING — 320px → 1440px
+   Audit-driven layer:
+   1. Fluid gutters & typographic safety (no horizontal overflow at 320px)
+   2. Notch / dynamic-viewport support (iOS Safari, Android Chrome)
+   3. 44px touch targets on phone & tablet
+   4. iOS form-field zoom prevention
+   5. Restored desktop 7/5 content grid (col-lg-*) kept single-column on mobile
+   6. Missing .btn-primary style (primary conversion CTA on 65 pages)
+   ========================================================================== */
+
+/* ---------- 1. Global mobile safety ---------- */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  /* Sticky header height + breathing room for in-page anchors (#quote-generator etc.) */
+  scroll-padding-top: 96px;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Fluid side gutters: 1rem on 320px phones, up to 1.5rem on desktop */
+.container {
+  padding-left: clamp(1rem, 4vw, 1.5rem);
+  padding-right: clamp(1rem, 4vw, 1.5rem);
+}
+
+/* Long unbroken strings (emails, slugs, WhatsApp numbers) must never push the layout */
+h1, h2, h3, h4, h5, h6, p, li, a, span, td, th, figcaption, blockquote, .stat-num, .footer-desc {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Tap feedback instead of a grey iOS flash */
+a, button, .mobile-toggle, .drawer-close, .filter-pill, .tab-nav-btn {
+  -webkit-tap-highlight-color: rgba(212, 175, 55, 0.18);
+}
+
+/* ---------- 2. Fully styled primary CTA (.btn-primary had no rule) ---------- */
+
+.btn-primary {
+  background: var(--gold-gradient);
+  color: #0B0F19;
+  font-weight: 700;
+  box-shadow: var(--gold-glow);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
+  color: #0B0F19;
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ---------- 3. Content grid: single column on mobile, 7/5 from 1025px ---------- */
+
+.row > .col-lg-7,
+.row > .col-lg-5,
+.row > [class*="col-lg-"] {
+  flex: 1 1 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .row > .col-lg-7 { flex: 7 1 0; min-width: 0; }
+  .row > .col-lg-5 { flex: 5 1 0; min-width: 0; }
+}
+
+/* Footer link stacks: anchors are inline by default and were running together */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.footer-link {
+  display: block;
+  padding: 0.3rem 0;
+}
+
+/* ---------- 4. Header on small screens ---------- */
+
+.header-inner {
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+/* Logo no longer eats the whole header row next to the hamburger */
+.header-logo img {
+  height: clamp(34px, 9vw, 48px);
+  width: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+  .header-inner { height: 68px; }
+  .header-logo img { height: 34px; }
+}
+
+/* ---------- 5. Drawer: dynamic viewport height + notch padding ---------- */
+
+/* Closed drawer sits off-canvas at right:-100%; hiding it keeps the document
+   from growing 56px wider than the viewport on 320-375px phones. */
+.mobile-drawer {
+  visibility: hidden;
+  transition: right 0.35s ease, visibility 0.35s ease;
+}
+
+.mobile-drawer.open {
+  visibility: visible;
+}
+
+.mobile-drawer {
+  height: 100vh;
+  height: 100dvh;
+  padding-top: max(1.5rem, env(safe-area-inset-top));
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  padding-right: max(1.5rem, env(safe-area-inset-right));
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* ---------- 6. Touch targets (phones & tablets) ---------- */
+
+@media (max-width: 1024px) {
+  .mobile-toggle {
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex: 0 0 auto;
+  }
+
+  .drawer-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-right: -0.5rem;
+  }
+
+  .drawer-nav-link,
+  .drawer-sub-link {
+    min-height: 44px;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .footer-link {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumb ol a,
+  .breadcrumb ol span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+  }
+
+  .back-to-top {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Inline text CTAs inside cards get a comfortable hit area */
+  .reveal-stagger a:not(.btn):not(.footer-link):not(.drawer-nav-link):not(.drawer-sub-link) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+  }
+}
+
+/* ---------- 7. iOS: stop Safari zooming in when a field is focused ---------- */
+
+@media (max-width: 768px) {
+  input, select, textarea, .inquiry-input, .inquiry-select {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* Sticky bottom bar + floating buttons respect the home indicator */
+  .mobile-bottom-bar {
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+  }
+
+  body {
+    padding-bottom: calc(76px + env(safe-area-inset-bottom));
+  }
+
+  .whatsapp-float-wrap,
+  .whatsapp-float {
+    bottom: calc(84px + env(safe-area-inset-bottom));
+  }
+
+  .back-to-top {
+    bottom: calc(84px + env(safe-area-inset-bottom));
+  }
+
+  /* Horizontal tab strip scrolls smoothly with momentum */
+  .process-tabs-nav {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    padding-bottom: 0.65rem;
+  }
+
+  .tab-nav-btn {
+    scroll-snap-align: start;
+  }
+}
+
+/* ---------- 8. Compact phones (≤480px): tighter rhythm, full-width CTAs ---------- */
+
+@media (max-width: 480px) {
+  .section { padding: 3rem 0; }
+
+  .hero {
+    padding: 3rem 0 2.5rem 0;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.35rem;
+  }
+
+  .hero-badge-pill {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.85rem;
+    letter-spacing: 0.02em;
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .cta-banner {
+    padding: 2rem 1.15rem;
+  }
+
+  .whatsapp-direct-box {
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .stat-item {
+    padding: 0.85rem 0.5rem;
+  }
+
+  .stat-label { font-size: 0.85rem; }
+  .stat-sub { font-size: 0.75rem; }
+
+  .footer-grid { gap: 2rem; }
+  .site-footer { padding: 3rem 0 1.5rem 0; }
+}
+
+/* ---------- 9. Landscape phones: stop the hero eating the whole screen ---------- */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 2.5rem 0 2rem 0;
+  }
+
+  .mobile-drawer {
+    width: 60%;
+    max-width: 340px;
+  }
+
+  .mobile-bottom-bar { display: none; }
+  body { padding-bottom: 0; }
+}
+
+/* ---------- 10. Wide tablets: keep the desktop nav from crowding ---------- */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header-inner { height: 72px; }
+  .section { padding: 4rem 0; }
+}
