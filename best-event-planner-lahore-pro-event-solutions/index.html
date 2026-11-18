@@ -320,129 +320,413 @@
 </div>
 </aside>
 <main id="main-content">
-<!-- Page Hero Banner -->
-<section aria-label="Page Hero" class="hero" style="min-height: 48vh; padding: 3.5rem 0 3rem 0;">
-<div class="hero-bg">
-<img alt="Luxury event management in Lahore by Pro Event Solutions" fetchpriority="high" height="900" src="/assets/images/homepage/luxury-event-management-lahore-hero.webp" width="1600"/>
-</div>
-<div class="hero-overlay"></div>
-<div class="container">
-<div class="hero-content" style="max-width: 900px;">
-<nav aria-label="Breadcrumb" class="breadcrumbs">
-<a href="/">Home</a>
-<span>›</span>
-<a href="/about-us/">Company</a>
-<span>›</span>
-<span class="current">How to Choose the Best Event Planner in Lahore</span>
-</nav>
-<div class="section-tag">Company</div>
-<h1 style="font-size: clamp(1.8rem, 3.8vw, 2.9rem); margin-bottom: 1rem;">How to Choose the Best Event Planner in Lahore</h1>
-<p class="hero-lead" style="font-size: 1.15rem; margin: 1rem 0 2rem 0;">Turnkey Event Management, Stage Engineering &amp; Creative Production in Lahore</p>
-<div class="hero-ctas" style="margin-bottom: 1.5rem;">
-<a class="btn btn-whatsapp" data-cta="" data-cta-label="Inner Page Hero WhatsApp" data-cta-location="hero" href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20am%20inquiring%20about%20How%20to%20Choose%20the%20Best%20Event%20Planner%20in%20Lahore%20%7C%20PES." rel="noopener noreferrer" target="_blank">
-<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
-              Inquire on WhatsApp (+92 307 4647635)
+  <!-- 1. Page Hero Banner -->
+  <section class="hero hero-subpage" style="min-height: 60vh; padding: 4.5rem 0 3.5rem 0; position: relative;">
+    <div class="hero-bg" style="position: absolute; inset: 0; z-index: -1;">
+      <img src="/assets/images/homepage/luxury-event-management-lahore-hero.webp" alt="How to choose the best event planner in Lahore" fetchpriority="high" width="1920" height="1080" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.32; filter: brightness(0.85);">
+    </div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <nav aria-label="Breadcrumb" class="reveal-on-scroll" style="margin-bottom: 1.5rem;">
+        <ol style="list-style: none; display: flex; gap: 0.5rem; padding: 0; font-size: 0.9rem; color: var(--text-muted);">
+          <li><a href="/" style="color: var(--text-light); text-decoration: none;">Home</a></li>
+          <li>/</li>
+          <li aria-current="page" style="color: var(--gold);">How to Choose an Event Planner</li>
+        </ol>
+      </nav>
+
+      <div class="badge-gold reveal-on-scroll" style="margin-bottom: 1rem;">Client Advisory &amp; Selection Guide</div>
+      <h1 class="text-gradient reveal-on-scroll" style="font-size: clamp(2rem, 4.2vw, 3.2rem); line-height: 1.2; margin-bottom: 1.25rem; max-width: 920px;">
+        How to Choose the Best Event Management Company in Lahore
+      </h1>
+      <p class="lead reveal-on-scroll" style="max-width: 800px; font-size: 1.15rem; line-height: 1.7; color: var(--text-light); margin-bottom: 2rem;">
+        A comprehensive insider guide to evaluating event planners, identifying middleman brokers, auditing in-house fabrication, demanding transparent pricing, and ensuring flawless wedding, corporate, and exhibition execution in Lahore.
+      </p>
+
+      <div class="hero-actions reveal-on-scroll" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+        <a class="btn btn-whatsapp" data-cta="" data-cta-label="Hero WhatsApp CTA" data-cta-location="guide_hero" href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20read%20your%20Guide%20on%20Choosing%20an%20Event%20Planner%20in%20Lahore%20and%20would%20like%20to%20discuss%20my%20event%20requirements." rel="noopener noreferrer" style="font-size: 1.05rem; padding: 0.85rem 1.85rem;" target="_blank">
+          Chat With Event Advisor (+92 307 4647635)
+        </a>
+        <a class="btn btn-primary" data-cta="" data-cta-label="Hero Quote CTA" data-cta-location="guide_hero" href="/contact/" style="font-size: 1.05rem; padding: 0.85rem 1.85rem;">
+          Request Itemized Event Audit &amp; Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Executive Overview: 5 Pillars of Event Excellence -->
+  <section class="section section-dark" style="padding: 4.5rem 0 3.5rem 0;">
+    <div class="container">
+      <div class="row" style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: center;">
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="section-tag">Industry Transparency</div>
+          <h2 class="text-gradient" style="margin-bottom: 1.25rem;">The Lahore Event Industry: Reality vs. Perception</h2>
+          <p style="color: var(--text-light); font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+            Lahore's event industry is filled with glamorous social media profiles that create the illusion of grand production capabilities. In reality, over 80% of self-proclaimed "event planners" in Lahore are third-party brokers operating out of shared co-working spaces with zero equipment, zero carpenters, and zero structural rigging inventory.
+          </p>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            When you hire a broker, your budget is diluted by 25% to 35% in pure broker commissions, while your event is outsourced to low-bid sub-vendors who have never met you. Pro Event Solutions was founded on the opposite philosophy: true in-house physical craftsmanship, owned technical hardware, and total operational accountability.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem;">
+            <div style="border-left: 3px solid var(--gold); padding-left: 1rem;">
+              <div style="font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">15+ Years</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Direct Field Experience</div>
+            </div>
+            <div style="border-left: 3px solid var(--gold); padding-left: 1rem;">
+              <div style="font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">In-House</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Rajgarh Workshop &amp; Paint Facility</div>
+            </div>
+            <div style="border-left: 3px solid var(--gold); padding-left: 1rem;">
+              <div style="font-size: 1.6rem; font-weight: 700; color: #FFFFFF;">100% Itemized</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Transparent BOQ Pricing</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal-scale">
+          <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-lg);">
+            <img src="/assets/images/homepage/pro-event-solutions-production-team.webp" alt="Pro Event Solutions production engineers and workshop team" loading="lazy" width="600" height="450" style="width: 100%; height: auto; display: block;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Problem vs Solution Bento Grid -->
+  <section class="section section-alt" style="padding: 4.5rem 0;">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll" style="margin-bottom: 3rem;">
+        <div class="section-tag">Pitfalls to Avoid</div>
+        <h2 class="text-gradient">The 3 Biggest Risks When Hiring an Event Planner in Lahore</h2>
+        <p style="color: var(--text-muted); max-width: 680px; margin: 0.75rem auto 0 auto;">
+          Protect your investment and peace of mind by recognizing these standard industry traps:
+        </p>
+      </div>
+
+      <div class="bento-grid reveal-stagger">
+        <div class="bento-card bento-col-4">
+          <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--accent-red, #FF5C5C); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Risk 01</div>
+          <h3 style="font-size: 1.15rem; color: #FFFFFF; margin-bottom: 0.75rem;">Pinterest vs. Reality Disasters</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.5;">Brokers show lavish international Pinterest pictures during sales pitches, then deliver cheap plastic replicas and wilting flowers on event day.</p>
+          <div style="background: rgba(37, 211, 102, 0.08); border-left: 3px solid #25D366; padding: 0.75rem 1rem; border-radius: 4px; font-size: 0.92rem; color: #E0E0E0; line-height: 1.5;">
+            ✓ PES Standard: We provide exact 3D CAD renders created specifically for your venue dimensions, followed by live mockups in our workshop.
+          </div>
+        </div>
+
+        <div class="bento-card bento-col-4">
+          <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--accent-red, #FF5C5C); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Risk 02</div>
+          <h3 style="font-size: 1.15rem; color: #FFFFFF; margin-bottom: 0.75rem;">Lump-Sum "Surprise" Estimates</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.5;">Opaque single-figure quotes that hide costs until halfway through setup, when planners demand huge cash add-ons for generator fuel, sound, or taxes.</p>
+          <div style="background: rgba(37, 211, 102, 0.08); border-left: 3px solid #25D366; padding: 0.75rem 1rem; border-radius: 4px; font-size: 0.92rem; color: #E0E0E0; line-height: 1.5;">
+            ✓ PES Standard: 100% itemized Bill of Quantities (BOQ) detailing stage dimensions, lighting fixtures, generator kVA, and flower stem counts.
+          </div>
+        </div>
+
+        <div class="bento-card bento-col-4">
+          <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--accent-red, #FF5C5C); margin-bottom: 0.5rem; letter-spacing: 0.05em;">Risk 03</div>
+          <h3 style="font-size: 1.15rem; color: #FFFFFF; margin-bottom: 0.75rem;">Power Blackouts &amp; Screeching Audio</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; line-height: 1.5;">Incompetent planners plugging high-load LED walls and warmers into domestic house circuits, tripping power mid-ceremony with no backup.</p>
+          <div style="background: rgba(37, 211, 102, 0.08); border-left: 3px solid #25D366; padding: 0.75rem 1rem; border-radius: 4px; font-size: 0.92rem; color: #E0E0E0; line-height: 1.5;">
+            ✓ PES Standard: Dedicated mobile silent diesel generators with automatic transfer switches (ATS) and balanced 3-phase industrial distribution.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. The 5 Evaluation Standards Bento Grid -->
+  <section id="evaluation-criteria" class="section section-dark" style="padding: 5rem 0;">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll" style="margin-bottom: 3.5rem;">
+        <div class="section-tag">Audit Checklist</div>
+        <h2 class="text-gradient">The 5 Core Criteria to Demand from Any Event Planner</h2>
+        <p style="color: var(--text-muted); max-width: 700px; margin: 0.75rem auto 0 auto;">
+          Before signing any contract or paying a deposit in Lahore, verify these 5 operational capabilities:
+        </p>
+      </div>
+
+      <div class="bento-grid reveal-stagger">
+        <div class="bento-card bento-col-7">
+          <div class="bento-image-wrap">
+            <img src="/assets/images/expo-centre/custom-exhibition-booth-fabrication.webp" alt="In-house custom carpentry workshop in Lahore" loading="lazy" width="600" height="400">
+            <div class="bento-badge">Criterion 01</div>
+          </div>
+          <div class="bento-content">
+            <h3>1. Do They Own a Dedicated Fabrication Workshop?</h3>
+            <p>Ask for the workshop physical address and visit it. A genuine event production company owns carpentry machinery, welding bays, and paint facilities. If they cannot invite you to their workshop, they are brokers.</p>
+            <a href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20would%20like%20to%20schedule%20a%20visit%20to%20your%20Rajgarh%20workshop." target="_blank" rel="noopener noreferrer" class="bento-link" data-cta data-cta-label="Guide Bento - Workshop Visit" data-cta-location="guide_criteria">
+              Schedule Workshop Visit →
             </a>
-</div>
-</div>
-</div>
-</section>
-<!-- Main Content Section -->
-<section class="section section-dark" style="padding-top: 4rem;">
-<div class="container" style="max-width: 980px;">
-<article class="card" style="padding: 3rem 2.5rem; background: var(--bg-card); border-color: var(--border-gold);"><div class="ai-quick-summary" style="background: rgba(212, 160, 23, 0.05); border-left: 4px solid #D4A017; padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-radius: 4px;"><p style="margin: 0 0 0.5rem 0; font-weight: 600; color: #FFFFFF; font-size: 1.05rem;">Quick Overview: Professional turnkey best event planner in lahore provided by Pro Event Solutions in Lahore (Citywide).</p><p style="margin: 0; font-size: 0.95rem; color: #D1D5DB;">Key Inclusions: 3D concept visualization, custom stage design, audiovisual production, lighting, vendor coordination, and on-site supervisor. Quotes are itemized line-by-line before commitment. Direct WhatsApp inquiry: +92 307 4647635.</p></div>
-<div class="content-block" style="margin-bottom: 2rem;"><p>Turnkey Event Management, Stage Engineering &amp; Creative Production in Lahore</p><p>Every event company in Lahore says it is the best, so the word carries no information. What matters is how a planner behaves when you ask specific questions — about quotes, designs, staffing and what happens when something changes. This page gives you the eight questions worth asking any event planner in Lahore, then shows how Pro Event Solutions answers each one, so you can compare us against anyone on facts. Comparing teams? Message us on WhatsApp and test the answers directly.</p></div>
-<div class="content-block" style="margin-bottom: 2rem;"><h2 class="text-gradient" style="margin-top:2.5rem; margin-bottom:1.25rem;">8 Questions to Ask Any Event Planner in Lahore</h2><ul class="feature-list reveal-stagger"><li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Will the quote be itemized? A lump sum hides the margin and makes scope changes impossible to price. A line-by-line estimate lets you cut or upgrade specific elements. Do I approve the design before it is built? Insist on 3D stage renders and floral schematics before fabrication. A company that cannot show you the design is selling you a promise, not a plan. Who is on-site on the event day? The person who sold you the event, or a named supervisor with the authority to solve problems? Get the answer in writing. Is this one team or a chain of brokers? If your planner subcontracts decor, sound and catering to unnamed vendors, accountability gets thinner at every layer. Do you know my venue — including Expo Centre Lahore? Venue experience is logistics: load-in points, power, hall rules and timings. At Expo Centre Lahore, hall procedures decide whether a stall or stage is ready on time. How direct is the communication? If you cannot reach the planning team on WhatsApp during the sales stage, event week will be worse. What exactly does the scope cover? "Full management" means different things to different companies. Ask which items — stage, florals, sound, lighting, catering, staffing — are inside the quote. What happens if plans change? Guest counts move, venues change, functions get added. The honest answer involves revised designs and a revised estimate — not "we will adjust."</span></li></ul></div>
-<div class="content-block" style="margin-bottom: 2rem;"><h2 class="text-gradient" style="margin-top:2.5rem; margin-bottom:1.25rem;">What You Get with Pro Event Solutions</h2><p>How we answer each question — all of it verifiable before you pay anything:</p><ul class="feature-list reveal-stagger"><li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Itemized estimates. Every element is priced line by line; adjust the scope and the number changes with it. 3D design approval before fabrication. You review stage renders and floral schematics and approve them before any build starts. Dedicated on-site supervision. A named supervisor runs setup, the live event and pack-down. One accountable team. Planning, design, production and supervision sit under one roof — no brokered vendor chains. Expo Centre Lahore work as a core service. We design, fabricate and manage exhibition stalls and trade-show setups at the Johar Town complex, alongside conferences and product launches across the city. WhatsApp-only, answered daily. One number — +92 307 4647635 — reaches the planning team daily from 9:00 to 22:00, and the same channel stays open through event week. A scope you can read. Weddings, corporate events, private parties, catering and venue management, Expo Centre exhibitions and studio builds — each service page lists what is included. Changes handled in writing. New requirements mean revised designs and a revised itemized estimate, approved by you before work continues.</span></li></ul></div>
-<div class="content-block" style="margin-bottom: 2rem;"><h2 class="text-gradient" style="margin-top:2.5rem; margin-bottom:1.25rem;">Types of Events We Plan</h2><ul class="feature-list reveal-stagger"><li><svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Wedding event management — Mehndi, Mayun, Barat, Walima and engagement ceremonies Corporate event management — conferences, seminars, AGMs, dinners, galas and award nights Private parties — birthdays, anniversaries, themed parties and family gatherings Catering &amp; venue management — menus, service staff and venue coordination Expo Centre Lahore events — exhibition stall design, fabrication and management</span></li></ul></div>
-<div class="content-block" style="margin-bottom: 2rem;"><h2 class="text-gradient" style="margin-top:2.5rem; margin-bottom:1.25rem;">Serving Your Area</h2><p>We plan and execute events across Lahore, including DHA , Gulberg , Bahria Town , Johar Town , Model Town and Wapda Town . The Lahore event planning directory maps every service and area page in one place.</p></div>
-<!-- In-Page Direct WhatsApp Action Box -->
-<div style="margin: 3rem 0 2rem 0; padding: 2rem; border-radius: var(--radius-md); background: rgba(37, 211, 102, 0.08); border: 1px solid rgba(37, 211, 102, 0.35); text-align: center;">
-<h3 style="color: #FFFFFF; margin-bottom: 0.5rem;">Have Questions About This Service or Location?</h3>
-<p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1rem;">Direct communication with our senior planning team in Lahore. We respond promptly with available dates, 3D concepts, and line-item quotes.</p>
-<a class="btn btn-whatsapp" data-cta="" data-cta-label="In-Article WhatsApp CTA" data-cta-location="article_body" href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20am%20inquiring%20about%20How%20to%20Choose%20the%20Best%20Event%20Planner%20in%20Lahore%20%7C%20PES." rel="noopener noreferrer" target="_blank">
-              Chat on WhatsApp (+92 307 4647635)
+          </div>
+        </div>
+
+        <div class="bento-card bento-col-5">
+          <div class="bento-image-wrap">
+            <img src="/assets/images/creative-production/professional-stage-truss-and-lighting-rig.webp" alt="Certified structural aluminum box trussing in Lahore" loading="lazy" width="600" height="400">
+            <div class="bento-badge">Criterion 02</div>
+          </div>
+          <div class="bento-content">
+            <h3>2. Do They Own Certified AV &amp; Rigging Hardware?</h3>
+            <p>Verify that stage trusses are certified aluminum box trusses with safety cables, not rusted iron poles. Inquire about LED panel pixel pitch (demand P2.5 or P3.9) and sound brands.</p>
+            <a href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20please%20share%20your%20technical%20AV%20equipment%20inventory." target="_blank" rel="noopener noreferrer" class="bento-link" data-cta data-cta-label="Guide Bento - AV Inventory" data-cta-location="guide_criteria">
+              Inspect AV Hardware →
             </a>
-</div>
-<div class="card" style="margin-top: 3rem; background: var(--bg-card); border-color: var(--border-subtle);">
-<h3 class="text-gold" style="font-size: 1.25rem; margin-bottom: 1rem;">Explore Related Services &amp; Areas in Lahore</h3>
-<div style="display: flex; flex-wrap: wrap; gap: 0.65rem;">
-<a class="location-pill" href="/wedding-event-management-lahore/">Weddings in Lahore</a>
-<a class="location-pill" href="/corporate-event-management-services-lahore/">Corporate Events</a>
-<a class="location-pill" href="/event-management-company-for-expo-centre-lahore/">Expo Centre Stalls</a>
-<a class="location-pill" href="/catering-and-venue-management-services-in-lahore/">Catering &amp; Venues</a>
-<a class="location-pill" href="/event-planner-in-dha-lahore/">DHA Lahore</a>
-<a class="location-pill" href="/event-planner-gulberg-lahore/">Gulberg Lahore</a>
-<a class="location-pill" href="/event-planner-in-bahria-town-lahore/">Bahria Town</a>
-<a class="location-pill text-gold" href="/lahore-event-planning-directory/" style="font-weight:700;">→ All 49 Lahore Areas</a>
-</div>
-</div>
-</article>
-</div>
-</section>
-<!-- FAQ Section -->
-<section class="section section-dark" style="padding-top: 3rem; padding-bottom: 3rem;">
-<div class="container">
-<div class="section-header reveal-on-scroll" style="margin-bottom: 2.5rem;">
-<div class="section-tag">Frequently Asked Questions</div>
-<h2 class="text-gradient">Questions &amp; Practical Notes</h2>
-</div>
-<div class="faq-wrap reveal-on-scroll">
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">
-<span>What makes an event planner reliable?</span>
-<span class="faq-toggle-icon">
-<svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="6 9 12 15 18 9"></polyline></svg>
-</span>
-</button>
-<div class="faq-answer">
-<p>Verifiable practice rather than slogans: itemized quotes, designs approved in writing before fabrication, a named on-site supervisor, and one direct communication channel that stays open until the event ends. A reliable planner shows you these before you have to ask.</p>
-</div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">
-<span>When should I book an event planner in Lahore?</span>
-<span class="faq-toggle-icon">
-<svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="6 9 12 15 18 9"></polyline></svg>
-</span>
-</button>
-<div class="faq-answer">
-<p>As early as you have a date and a venue in mind, because popular venues and peak-season weekends in Lahore are committed months ahead. Short-notice events are possible depending on team and fabrication capacity, so send the date first on WhatsApp and we will confirm availability honestly.</p>
-</div>
-</div>
-<div class="faq-item">
-<button aria-expanded="false" class="faq-question">
-<span>How do I get quotes from Pro Event Solutions?</span>
-<span class="faq-toggle-icon">
-<svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><polyline points="6 9 12 15 18 9"></polyline></svg>
-</span>
-</button>
-<div class="faq-answer">
-<p>Message +92 307 4647635 on WhatsApp with your event type, date(s), venue or area, guest count and required services. After a short brief and the 3D design stage, you receive an itemized estimate you can compare line by line with any other quote.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Strong WhatsApp Conversion Banner -->
-<section class="section section-alt" style="padding: 4rem 0;">
-<div class="container">
-<div class="cta-banner reveal-scale">
-<div class="section-tag" style="background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.4); color: #25D366;">Direct Booking Desk</div>
-<h2 class="text-gradient">Book Pro Event Solutions in Lahore</h2>
-<p>Send your event date, venue, guest count, and requirements to our Lahore team on WhatsApp. Get a focused response and transparent itemized quote.</p>
-<div class="whatsapp-direct-box">
-<svg fill="currentColor" height="24" viewbox="0 0 24 24" width="24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
-<span>WhatsApp: +92 307 4647635</span>
-</div>
-<div>
-<a class="btn btn-whatsapp" data-cta="" data-cta-label="Inner Page CTA Banner WhatsApp" data-cta-location="cta_banner" href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20am%20inquiring%20about%20How%20to%20Choose%20the%20Best%20Event%20Planner%20in%20Lahore%20%7C%20PES." rel="noopener noreferrer" style="font-size: 1.1rem; padding: 1rem 2.25rem;" target="_blank">
-              Send Message on WhatsApp
+          </div>
+        </div>
+
+        <div class="bento-card bento-col-4">
+          <div class="bento-image-wrap">
+            <img src="/assets/images/weddings/pakistani-royal-wedding-stage-floral-arch.webp" alt="Fresh imported floral styling and stage architecture" loading="lazy" width="600" height="400">
+            <div class="bento-badge">Criterion 03</div>
+          </div>
+          <div class="bento-content">
+            <h3>3. Realistic 3D CAD vs. Pinterest</h3>
+            <p>Demand a site-specific 3D architectural plan showing exact stage dimensions, table spacing, and entry arches tailored to your venue.</p>
+            <a href="/contact/" class="bento-link" data-cta data-cta-label="Guide Bento - 3D Render" data-cta-location="guide_criteria">
+              Request 3D Concept →
             </a>
-</div>
-</div>
-</div>
-</section>
+          </div>
+        </div>
+
+        <div class="bento-card bento-col-4">
+          <div class="bento-image-wrap">
+            <img src="/assets/images/catering-venues/luxury-banquet-hall-table-setting-lahore.webp" alt="Itemized transparent event pricing and bill of quantities" loading="lazy" width="600" height="400">
+            <div class="bento-badge">Criterion 04</div>
+          </div>
+          <div class="bento-content">
+            <h3>4. Itemized Bill of Quantities (BOQ)</h3>
+            <p>Never accept a single lump sum. Demand unit prices for staging, lighting fixtures, floral varieties, table counts, and generator fuel hours.</p>
+            <a href="/contact/" class="bento-link" data-cta data-cta-label="Guide Bento - BOQ Quote" data-cta-location="guide_criteria">
+              View Sample BOQ →
+            </a>
+          </div>
+        </div>
+
+        <div class="bento-card bento-col-4">
+          <div class="bento-image-wrap">
+            <img src="/assets/images/lahore-locations/dha-lahore-luxury-marquee-venue.webp" alt="Established relationships with top venues in DHA and Lahore" loading="lazy" width="600" height="400">
+            <div class="bento-badge">Criterion 05</div>
+          </div>
+          <div class="bento-content">
+            <h3>5. Venue Protocols &amp; Society NOCs</h3>
+            <p>Ensure the planner has active experience and operational clearance in gated areas like DHA, Bahria Town, Cantt, and Expo Centre Lahore.</p>
+            <a href="/lahore-event-planning-directory/" class="bento-link" data-cta data-cta-label="Guide Bento - Locality Directory" data-cta-location="guide_criteria">
+              Explore 49 Lahore Areas →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Step-by-Step Evaluation Timeline -->
+  <section class="section section-alt" style="padding: 4.5rem 0;">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll" style="margin-bottom: 3.5rem;">
+        <div class="section-tag">Best Practice Timeline</div>
+        <h2 class="text-gradient">The Recommended 5-Step Event Planning Timeline</h2>
+        <p style="color: var(--text-muted); max-width: 650px; margin: 0.75rem auto 0 auto;">
+          Follow this structured timeline to guarantee flawless coordination and zero stress on event day:
+        </p>
+      </div>
+
+      <div class="workflow-timeline reveal-stagger">
+        <div class="workflow-step-card">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 0.5rem;">Discovery &amp; Budget Scoping (8-12 Weeks Out)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Define guest counts, desired ambiance, venue preferences, and establish a realistic itemized budget allocation.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 0.5rem;">Physical Venue Technical Survey (6-8 Weeks Out)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Conduct on-site measurements of stage width, ceiling height clearances, power board access, sound curfews, and loading gates.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 0.5rem;">3D CAD Modeling &amp; Material Approval (4-6 Weeks Out)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Review photorealistic 3D renders, fabric swatches, floral recipes, and finalize the itemized Bill of Quantities contract.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 0.5rem;">Workshop Fabrication &amp; Dry-Fitting (2-3 Weeks Out)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Structures, stages, and decorative elements are built and test-fitted inside our Rajgarh workshop before dispatch.</p>
+          </div>
+        </div>
+
+        <div class="workflow-step-card">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <h3 style="color: #FFFFFF; font-size: 1.15rem; margin-bottom: 0.5rem;">On-Site Rigging &amp; Flawless Execution (Event Day)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0;">Early morning setup, full soundcheck, floral detailing, live event calling, and silent generator standby throughout the night.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Visual Portfolio Gallery -->
+  <section class="section section-dark" style="padding: 4.5rem 0;">
+    <div class="container">
+      <div class="section-header text-center reveal-on-scroll" style="margin-bottom: 3rem;">
+        <div class="section-tag">Visual Verification</div>
+        <h2 class="text-gradient">Real Events Built by Pro Event Solutions in Lahore</h2>
+        <p style="color: var(--text-muted); max-width: 650px; margin: 0.75rem auto 0 auto;">
+          Real Pakistani weddings, corporate summits, and exhibition stalls produced by our in-house team:
+        </p>
+      </div>
+
+      <div class="portfolio-gallery-grid reveal-stagger">
+        <div class="portfolio-item-wrap">
+          <img src="/assets/images/weddings/pakistani-luxury-wedding-stage-lahore.webp" alt="Pakistani Luxury Wedding Stage in DHA Lahore" loading="lazy" width="600" height="400">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Luxury Wedding</span>
+            <div style="font-weight: 600; color: #FFFFFF; font-size: 1rem; margin-top: 0.25rem;">Royal Wedding Stage - DHA Lahore</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrap">
+          <img src="/assets/images/corporate-events/corporate-annual-awards-gala.webp" alt="Corporate Gala Dinner & Awards Stage in Lahore" loading="lazy" width="600" height="400">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Corporate Gala</span>
+            <div style="font-weight: 600; color: #FFFFFF; font-size: 1rem; margin-top: 0.25rem;">Annual Awards Night - Expo Centre</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrap">
+          <img src="/assets/images/expo-centre/expo-centre-lahore-exhibition-stall-design.webp" alt="Exhibition Stall Design at Expo Centre Lahore" loading="lazy" width="600" height="400">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Exhibition Stall</span>
+            <div style="font-weight: 600; color: #FFFFFF; font-size: 1rem; margin-top: 0.25rem;">Custom Wooden Pavilion - Expo Centre</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrap">
+          <img src="/assets/images/catering-venues/luxury-banquet-hall-table-setting-lahore.webp" alt="Luxury Banquet Hall Table Setting in Gulberg Lahore" loading="lazy" width="600" height="400">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Banquet Styling</span>
+            <div style="font-weight: 600; color: #FFFFFF; font-size: 1rem; margin-top: 0.25rem;">Luxury Table Dressing - Gulberg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. In-Page WhatsApp Action Box -->
+  <section class="section section-dark" style="padding: 2rem 0;">
+    <div class="container" style="max-width: 980px;">
+      <div style="padding: 2.5rem 2rem; border-radius: var(--radius-md); background: rgba(37, 211, 102, 0.08); border: 1px solid rgba(37, 211, 102, 0.35); text-align: center;" class="reveal-scale">
+        <h3 style="color: #FFFFFF; font-size: 1.4rem; margin-bottom: 0.5rem;">Have Questions About Your Upcoming Event in Lahore?</h3>
+        <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.05rem; max-width: 650px; margin-left: auto; margin-right: auto;">
+          Speak directly with our senior event production director. We provide free site feasibility reviews, 3D conceptual advice, and honest itemized guidance.
+        </p>
+        <a class="btn btn-whatsapp" data-cta="" data-cta-label="In-Article WhatsApp CTA" data-cta-location="guide_body" href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20read%20your%20Guide%20on%20Choosing%20an%20Event%20Planner%20in%20Lahore%20and%20would%20like%20to%20discuss%20my%20event%20requirements." rel="noopener noreferrer" style="font-size: 1.05rem; padding: 0.85rem 2rem;" target="_blank">
+          Chat With Senior Director on WhatsApp (+92 307 4647635)
+        </a>
+      </div>
+
+      <!-- Related Services Pills -->
+      <div class="card" style="margin-top: 3rem; background: var(--bg-card); border-color: var(--border-subtle);">
+        <h3 class="text-gold" style="font-size: 1.2rem; margin-bottom: 1rem;">Explore Lahore Event Services by Specialty</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.65rem;">
+          <a class="location-pill" href="/wedding-event-management-lahore/">Weddings in Lahore</a>
+          <a class="location-pill" href="/corporate-event-management-services-lahore/">Corporate Events</a>
+          <a class="location-pill" href="/event-management-company-for-expo-centre-lahore/">Expo Centre Operations</a>
+          <a class="location-pill" href="/catering-and-venue-management-services-in-lahore/">Catering &amp; Venues</a>
+          <a class="location-pill" href="/creative-production-services-lahore/">AV &amp; Staging Production</a>
+          <a class="location-pill text-gold" href="/lahore-event-planning-directory/" style="font-weight:700;">→ Lahore Locality Directory (49 Areas)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Comprehensive FAQ Accordion -->
+  <section class="section section-alt" style="padding: 4.5rem 0;">
+    <div class="container" style="max-width: 900px;">
+      <div class="section-header text-center reveal-on-scroll" style="margin-bottom: 3rem;">
+        <div class="section-tag">Frequently Asked Questions</div>
+        <h2 class="text-gradient">Frequently Asked Questions on Hiring an Event Planner in Lahore</h2>
+        <p style="color: var(--text-muted); margin-top: 0.5rem;">Expert answers to budgeting, booking timelines, and contract terms:</p>
+      </div>
+
+      <div class="accordion reveal-stagger">
+        <div class="accordion-item" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); margin-bottom: 0.85rem; overflow: hidden;">
+          <details style="padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; color: #FFFFFF; cursor: pointer; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>How much does a full-service event planner cost in Lahore?</span>
+              <span class="text-gold" style="font-size: 1.3rem; margin-left: 1rem;">+</span>
+            </summary>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+              Pricing depends on guest count, decor complexity, and technical requirements. Because Pro Event Solutions manufactures staging and decor in our own Rajgarh workshop, we provide direct wholesale fabrication rates with itemized pricing, avoiding the 25-35% middleman broker markup. Contact us for a transparent, line-item quotation tailored to your venue.
+            </p>
+          </details>
+        </div>
+
+        <div class="accordion-item" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); margin-bottom: 0.85rem; overflow: hidden;">
+          <details style="padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; color: #FFFFFF; cursor: pointer; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>How can I verify if an event planner actually owns a workshop?</span>
+              <span class="text-gold" style="font-size: 1.3rem; margin-left: 1rem;">+</span>
+            </summary>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+              Ask to visit their workshop during regular business hours to inspect work-in-progress carpentry, welding, and painting. True production companies will happily welcome you to their facility. We regularly host clients at our Rajgarh workshop in Lahore to review test assemblies of their stages and backdrops.
+            </p>
+          </details>
+        </div>
+
+        <div class="accordion-item" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); margin-bottom: 0.85rem; overflow: hidden;">
+          <details style="padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; color: #FFFFFF; cursor: pointer; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>What backup systems should an event company provide?</span>
+              <span class="text-gold" style="font-size: 1.3rem; margin-left: 1rem;">+</span>
+            </summary>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+              Any professional event company in Pakistan must supply a primary and secondary silent diesel generator with an Automatic Transfer Switch (ATS), redundant audio consoles, spare wireless microphone channels, and an on-site master electrician stationed at the main distribution board throughout the entire event.
+            </p>
+          </details>
+        </div>
+
+        <div class="accordion-item" style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); margin-bottom: 0.85rem; overflow: hidden;">
+          <details style="padding: 1.25rem 1.5rem;">
+            <summary style="font-weight: 600; color: #FFFFFF; cursor: pointer; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>How far in advance should I book my event in Lahore?</span>
+              <span class="text-gold" style="font-size: 1.3rem; margin-left: 1rem;">+</span>
+            </summary>
+            <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+              For prime wedding season (November through February), we recommend booking 2 to 3 months in advance to secure preferred venue dates and fabrication slots. For corporate conferences and exhibitions, 4 to 6 weeks is standard for 3D design approval, NOC clearances, and pre-production.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Final Request a Quote Callout -->
+  <section class="section section-dark" style="padding: 4.5rem 0;">
+    <div class="container" style="max-width: 850px;">
+      <div class="card card-featured text-center reveal-scale" style="padding: 3rem 2rem;">
+        <h2 class="text-gradient" style="font-size: 2rem; margin-bottom: 1rem;">Ready to Plan Your Event With Lahore's In-House Specialists?</h2>
+        <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem auto; line-height: 1.6;">
+          Experience the difference of working directly with an authentic production house. Contact Pro Event Solutions today for an itemized estimate and 3D concept.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+          <a class="btn btn-whatsapp" data-cta="" data-cta-label="Final WhatsApp CTA" data-cta-location="guide_bottom" href="https://wa.me/923074647635?text=Hello%20Pro%20Event%20Solutions%2C%20I%20read%20your%20Guide%20on%20Choosing%20an%20Event%20Planner%20in%20Lahore%20and%20would%20like%20to%20discuss%20my%20event%20requirements." rel="noopener noreferrer" style="font-size: 1.05rem; padding: 0.85rem 2rem;" target="_blank">
+            Chat on WhatsApp (+92 307 4647635)
+          </a>
+          <a class="btn btn-primary" data-cta="" data-cta-label="Final Quote CTA" data-cta-location="guide_bottom" href="/contact/" style="font-size: 1.05rem; padding: 0.85rem 2rem;">
+            Request Itemized Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <!-- Site Footer -->
 <footer class="site-footer" role="contentinfo">
